@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoMart - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="shop-header">
+
+    <div class="logo">🍫 ChocoMart</div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search chocolates...">
+        <button onclick="searchProducts()">🔍</button>
+    </div>
+
+    <nav>
+        <a href="products.html">Products</a>
+        <a href="#">❤️ Wishlist</a>
+        <a href="#">👤 Account</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+
+</header>
+
+<section class="products-page">
+
+    <div class="shop-title">
+        <h1>🍫 ChocoMart Chocolates</h1>
+        <p>Choose your favourite chocolate</p>
+    </div>
+
+    <div class="category-bar">
+        <button>All</button>
+        <button>Milk Chocolate</button>
+        <button>Dark Chocolate</button>
+        <button>Premium</button>
+        <button>Offers</button>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card" data-name="Dairy Milk">
+            <div class="product-image">🍫</div>
+            <h3>Dairy Milk</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹50</p>
+            <button onclick="addToCart('Dairy Milk', 50)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Dairy Milk', 50)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="KitKat">
+            <div class="product-image">🍫</div>
+            <h3>KitKat</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p class="price">₹40</p>
+            <button onclick="addToCart('KitKat', 40)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('KitKat', 40)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="5 Star">
+            <div class="product-image">🍫</div>
+            <h3>5 Star</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹30</p>
+            <button onclick="addToCart('5 Star', 30)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('5 Star', 30)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Perk">
+            <div class="product-image">🍫</div>
+            <h3>Perk</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p class="price">₹20</p>
+            <button onclick="addToCart('Perk', 20)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Perk', 20)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Munch">
+            <div class="product-image">🍫</div>
+            <h3>Munch</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p class="price">₹20</p>
+            <button onclick="addToCart('Munch', 20)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Munch', 20)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Milky Bar">
+            <div class="product-image">🍫</div>
+            <h3>Milky Bar</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹45</p>
+            <button onclick="addToCart('Milky Bar', 45)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Milky Bar', 45)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Snickers">
+            <div class="product-image">🍫</div>
+            <h3>Snickers</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹60</p>
+            <button onclick="addToCart('Snickers', 60)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Snickers', 60)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Ferrero Rocher">
+            <div class="product-image">🍫</div>
+            <h3>Ferrero Rocher</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹180</p>
+            <button onclick="addToCart('Ferrero Rocher', 180)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Ferrero Rocher', 180)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Galaxy">
+            <div class="product-image">🍫</div>
+            <h3>Galaxy</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p class="price">₹100</p>
+            <button onclick="addToCart('Galaxy', 100)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Galaxy', 100)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-name="Toblerone">
+            <div class="product-image">🍫</div>
+            <h3>Toblerone</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="price">₹150</p>
+            <button onclick="addToCart('Toblerone', 150)">Add to Cart</button>
+            <button class="buy-btn" onclick="buyNow('Toblerone', 150)">Buy Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
