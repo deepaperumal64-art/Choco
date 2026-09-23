@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍫 ChocoMart</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart 🛒</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to ChocoMart 🍫</h1>
+            <p>Sweetness Delivered With Love 💕</p>
+            <button onclick="shopNow()">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Chocolates 🍫</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="choco">🍫</div>
+                <h3>Dairy Milk</h3>
+                <p>₹50</p>
+                <button onclick="addToCart('Dairy Milk')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="choco">🍫</div>
+                <h3>KitKat</h3>
+                <p>₹40</p>
+                <button onclick="addToCart('KitKat')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="choco">🍫</div>
+                <h3>Milky Bar</h3>
+                <p>₹45</p>
+                <button onclick="addToCart('Milky Bar')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="choco">🍫</div>
+                <h3>Choco Bar</h3>
+                <p>₹60</p>
+                <button onclick="addToCart('Choco Bar')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ChocoMart | Sweetness Delivered With Love 💕</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
